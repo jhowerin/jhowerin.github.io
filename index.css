@@ -16,7 +16,7 @@ p {
 }
 
 .jumbotron {
-  color: white;
+  color: white !important;
   padding: 35vh 0;
   height: 100vh;
   background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/218852/raleigh-skyline-bg.jpg") no-repeat center center fixed;
