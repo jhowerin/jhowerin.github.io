@@ -1,0 +1,29 @@
+body {
+  color: #333;
+}
+
+p {
+  font-size: 18px;
+  font-family: "Arial", "Calibri", sans-serif;
+}
+
+.jumbotron {
+  color: white !important;
+  padding: 35vh 0;
+  height: 100vh;
+  background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/218852/Raleigh-DIX.jpeg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+#bg-shade {
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 10px 0;
+}
+
+hr {
+  border: 1px solid #fff;
+  box-shadow: 0 0 1px;
+}
+
+
+
