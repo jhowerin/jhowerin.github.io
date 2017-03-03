@@ -5,7 +5,7 @@ function bindButtons() {
 	document.getElementById('getTemp').addEventListener('click', function(e){
 		//key var fields that includes the URL to get data, key, and input values
 		var req = new XMLHttpRequest();
-		var url = "https://api.iextrading.com/1.0/tops?";
+		var url = "https://crossorigin.me/https://api.iextrading.com/1.0/tops?";
 		//this is my custom key - use wisely
 		//var appId = "&appid=448558d905c237ee1064dd5aef3d8f96";
 		var inputQuote = document.getElementById("getQuote").value;

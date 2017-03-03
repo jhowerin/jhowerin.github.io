@@ -114,6 +114,7 @@
               var req=document.getElementById("req");   
               var res=document.getElementById("result");    
               var request = new XMLHttpRequest();
+              inp = "https://crossorigin.me/" + inp;
               request.open("GET", inp, false);
               try {
                   request.send();
