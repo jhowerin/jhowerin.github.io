@@ -37,7 +37,7 @@
   <div class="container">
     <div id="bg-shade">
       <h1>Real Time Stock Quote API</h1>
-      <h2>Provided by IEX Group</h2>
+      <h2>Data provided for free by <a href="https://iextrading.com/developer/" target="_blank">IEX</a></h2>
     </div>
     <hr>
   </div><!-- /.container -->
@@ -49,17 +49,17 @@
     <div class="row">
       <div class="col-md-12">
         <h2>IEX Group API's</h2>
-        <blockquote>Details on the IEX API's can be found <a href="https://www.iextrading.com/developer/" target="_blank">HERE</a>
-        The API supports GET requests with various options. The data returned is <a href="https://en.wikipedia.org/wiki/JSONP" target="_blank">JSONP.</a>
+        <blockquote>Details on the IEX API's can be found <a href="https://www.iextrading.com/developer/" target="_blank">HERE.</a>
+        The API supports GET requests with various options and the data returned is <a href="https://en.wikipedia.org/wiki/JSONP" target="_blank">JSONP.</a>
         <OL><b>The GET request syntax</b>
           <li>Prefix = https://api.iextrading.com/1.0</li>
           <li>Endpoints = {tops || market || stats}</li>
           <li>Parameters</li>
           <li>Remember the ? to indicate this is a GET request</li>
         </OL>
-        The complete GET request is Prefix + Endpoints + Parameters
+        The complete GET request is Prefix + Endpoint + Parameters
         </blockquote>
-        <blockquote>Let's look at the <b>tops</b> category. The tops category has numerous attributes and parameters and at a minimum you must provide a stock symbol. For example, with the symbol aapl (Apple Computers), the GET request will look like the following:<a href="https://api.iextrading.com/1.0/tops/?symbols=aapl"  target="_blank">https://api.iextrading.com/1.0/tops/?symbols=aapl</a>. You can filter the results by adding in a filter parameter that you can use to determine which JSON key/value pairs you want to see. So, if you want to only see the last traded stock price, you can use filter=lastSalePrice. The complete URL would be <a href="https://api.iextrading.com/1.0/tops/?symbols=aapl&filter=lastSalePrice" target="_blank">https://api.iextrading.com/1.0/tops/?symbols=aapl&filter=lastSalePrice</a>. With this approach, you can access all of the publically available stock information provided by IEX.
+        <blockquote>Let's look at the <b>tops</b> endpoint. The tops endpoint has numerous attributes and parameters. At a minimum, the user must provide a stock symbol. For example, with the symbol aapl (Apple Computers), the GET request will look like the following:<a href="https://api.iextrading.com/1.0/tops/?symbols=aapl"  target="_blank">https://api.iextrading.com/1.0/tops/?symbols=aapl</a>. You can filter the results by adding in a filter parameter that you can use to determine which JSON key/value pairs you want to see. So, if you want to only see the last traded stock price, you can use filter=lastSalePrice. The complete URL would be <a href="https://api.iextrading.com/1.0/tops/?symbols=aapl&filter=lastSalePrice" target="_blank">https://api.iextrading.com/1.0/tops/?symbols=aapl&filter=lastSalePrice</a>. With this approach, you can access all of the publically available stock information provided by IEX.
         </blockquote>
         <blockquote>
           <table id="t01">
@@ -87,7 +87,7 @@
             <tr>
               <td>stats</td>
               <td>records</td> 
-              <td>IEX trading macro stats. There are many other attributes for stats and you see them at the IEX website.</td>
+              <td>IEX trading macro stats. There are many other attributes for stats documented at the IEX website.</td>
             </tr>
           </table>
 
@@ -107,7 +107,9 @@
         <h2>Make your own GET request</h2>
         <blockquote>
           From what you've learned so far, you are ready to craft your own GET request messages. Remember the formula is Prefix + Endpoints + Parameters. Try the examples provided as a start. 
-          Enter a complete GET request and see what happens!
+          Enter a complete GET request and see what happens !
+
+          Please note that due to cross-origin issues, the GET request will be prepended with a URL to a CORS proxy.
           <script>
             function getData() {
               var inp=document.getElementById("inp").value;   
@@ -146,8 +148,9 @@
     <div class="row">
       <div class="col-md-12">
         <h2>Real Time Stock Quotes</h2>
+         <h3>IEX Real-Time Price</h3>
         <blockquote>
-          This engine uses the the above GET request syntax and shows 4 different parameters.
+          This engine uses the the above GET request syntax and shows 4 different parameters. All data from trades executed on the IEX.
         </blockquote>>
             <script src = indexStocks.js> 
             </script>
@@ -216,15 +219,14 @@
     <div class="row">
       <div class="col-md-3">
         <div id="contact-me">
-          <h3>Contact me at:</h3>
-          <h4 class="text-primary">
+          <h2>Contact me at:</h2>
+          <h2 class="text-primary">
             jhowerin@gmail.com
-          </h4>
+          </h2>
         </div>
       </div><!-- /.col -->
       <div class="col-md-9">
         </div>
-      </div><!-- /.col -->
     </div><!-- /.row -->
   </div><!-- /.container -->
 </div><!-- /#contact -->

@@ -38,7 +38,7 @@ hr {
   background-size: cover;
   margin-top: -30px;
   padding: 0 0;
-  height: 125vh;
+  height: 150vh;
 }
 
 #about blockquote {
@@ -54,9 +54,9 @@ hr {
 #about2 {
   background: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/218852/001-subtle-light-pattern-background-texture.jpg") no-repeat center center fixed;
   background-size: cover;
-  margin-top: -30px;
+  margin-top: 0px;
   padding: 0 0;
-  height: 70vh;
+  height: 100vh;
 }
 
 #about2 blockquote {
@@ -160,4 +160,8 @@ th, td {
 
 #button{
   color:black;
+}
+
+h3 {
+  text-align: center;
 }
