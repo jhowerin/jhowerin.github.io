@@ -1,5 +1,5 @@
 body {
-	font-family: 'Lato', sans-serif;
+	font-family: sans-serif;
 	color: #676858;
 	font-weight: 300;
 }
@@ -7,7 +7,7 @@ body {
 hr {
     border: none;
     height: 3px;
-    background-color: #bcbbbb;
+		background-color: grey;
 }
 
 .top-background {
@@ -29,10 +29,10 @@ h4 {
 	color: #0d00c4;
 }
 
-
 .title-super-full {
 	font-size: 60px;
 }
+
 .title-super-short {
 	font-size: 60px;
 }
@@ -54,6 +54,7 @@ h4 {
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
 }
 
 .project {
